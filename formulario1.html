@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Formulario html</title>
+</head>
+<body>
+    <form id="fcliente" action="mailto:israel_grs@live.com" method="post">
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+      <p>
+        <label for="nnome">Nome</label>
+        :<input type="text" name="nnome" id="nnome">
+      </p>
+      <p>
+      <label for="dtnascimento">Data de Nascimento:</label>
+        <input type="date" name="dtnascimento" id="dtnascimento">
+      </p>
+      <p>
+        Sexo: <input type="radio" name="sexxo" id="idmasc"> <label for="idmasc">Masculino</label>
+              <input type="radio" name="sexxo" id="idfem">  <label for="idfem">Feminino</label>
+      </p>
+      <p>
+        <label for="emaill">E-mail:</label>
+        <input type="email" name="emaill" id="emaill" placeholder="exemplamail@hotmail.com">
+      </p>
+      <p>
+        <label for="senhaa">Senha:</label>
+        <input type="password" name="senhaa" id="senhaa" maxlenght="12" size="12" placeholder="10 letras">
+      </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contato</legend>
+      <p>
+        <label for="endereco">
+        Endereço:<input type="text" name="endereco" id="endereco" placeholder="Quadra,logradouro,rua...">
+      </label>
+      </p>
+      <p>
+        <label for="numero">
+        Número:<input type="number" name="numero" id="numero">
+      </label>
+      </p>
+      <p>
+        <label for="complementoo">
+        Complemento:<input type="text" name="complementoo" id="complementoo">
+      </label>
+      </p>
+      <p>
+        <label for="cidadeee">
+        Cidade:
+        </label>
+        <input type="text" name="cidadee" id="cidadeee" size="20" maxlength="25" list="cidades" placeholder="Brasília">
+        <datalist id="cidades">
+          <option>São Paulo</option>
+          <option>Brasília</option>
+          <option>Guarulhos</option>
+        </datalist>
+      </p>
+      <p>
+        <label for="statess">
+        Estado:
+        </label>
+        <select name="estados" id="statess">
+          <option selected disabled value="">Selecione...</option>
+          <option value="AC">Acre</otpion>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="ES">Espirito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="PR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+          <option value="DF">Distrito Federal</option>
+        </select>
+      </p>
+      <p>
+        <label for="telefonoo">
+        Telefone:
+        </label>
+        <input type="number" name="telefono" id="telefonoo">
+      </p>
+      <p>
+        <input type="checkbox" name="emailspromo" id="emailsspromoos">
+        <label for="emailsspromoos">Gostaria de receber e-mails promocionais></label>
+      </p>
+      </fieldset>
+      <input type="file">s
+      <input type="submit" value="enviar" name="botao" id="botaoo" height="35px" width="45px">
+      <input type="reset" value="Limpar">
+      <br><br><br><br><br>
+      Satisfação
+      min<input type="range" min="1" max="10" step="1">max
+
+      <br><br><br><br><br><br><br>
+      <input type="color">
+    </form>
+
+
+</body>
+</html>
